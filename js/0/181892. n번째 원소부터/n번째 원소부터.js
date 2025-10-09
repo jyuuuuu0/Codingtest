@@ -1,7 +1,9 @@
 function solution(num_list, n) {
     let answer = [];
-    for (let i = n - 1; i < num_list.length; i++) {
-        answer.push(num_list[i])
+    let index = 0;
+    for(let i=n-1;i<num_list.length;i++){
+        answer[index] = num_list[i];
+        index++;
     }
     return answer;
 }
